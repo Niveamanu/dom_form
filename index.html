@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>Table</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+
+
+</head>
+<style>
+    #r {
+        width: 60%;
+    }
+</style>
+
+<body>
+    <div class="display-4 text-center mt-2">User Form</div>
+
+    <div class="container justify-content-center mt-2 " id="r" style="margin-left:23%;">
+
+        <div class="row ">
+
+            <div class="col-4">
+                <label for="n" class="form-label">Firstname</label>
+                <input type="text" placeholder="enter your firstname" class="form-control" id="fname" required></div>
+            <div class="col-4"> <label for="n" class="form-label">Lastname</label>
+                <input type="text" placeholder="enter your lastname" class="form-control" id="lname" required></div>
+        </div>
+        <div class="row ">
+            <div class="col-4">
+                <label for="a" class="form-label">Address</label>
+                <textarea name="t" id="add" cols="10" rows="3" class="form-control" id="add" required></textarea></div>
+            <div class="col-4">
+                <label for="p" class="form-label">Pincode</label>
+                <input type="number" class="form-control" placeholder="enter pincode" id="pin" required>
+
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="col-4">
+                <label class="form-label">Gender</label>
+
+                <label class="radio-inline">
+                      <input type="radio" name="gen" id="male"  value="male">
+                       male
+                    </label>
+                <label class="radio-inline">
+                      <input type="radio" name="gen" id="female"  value="female">
+                      female
+                    </label></div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <label for="f" class="form-label">Food</label>
+                <select name="s" id="food" class="form-control" multiple required>
+                        <option value="pizza">pizza</option>
+                        <option value="burger">burger</option>
+                        <option value="sandwich">sandwich</option>
+                        <option value="meals">meals</option>
+                        <option value="briyani">briyani</option>
+                    </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <label for="s" class="form-label">State</label>
+                <select name="s" id="state" class="form-control">
+    <option value="TamilNadu">TamilNadu</option>
+    <option value="Kerala">Kerala</option>
+    <option value="UttarPradesh">UttarPradesh</option>
+</select>
+            </div>
+            <div class="col-4">
+                <label for="s" class="form-label">Country</label>
+                <input type="text" class="form-control" id="country" required>
+            </div>
+        </div> <br>
+        <div class="row justify-content-center" style="margin-right:33%;">
+            <div class="col-4">
+                <input type="submit" value="Submit" id="sub" class='form-control bg-success text-white'></div>
+        </div>
+
+    </div>
+    <br>
+    <table border="2" id="show" class="justify-content-center " style="margin-left:23%;">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Food</th>
+                <th>State</th>
+                <th>Country</th>
+
+            </tr>
+        </thead>
+    </table>
+
+
+</body>
+<script src="script4.js"></script>
+
+</html>
